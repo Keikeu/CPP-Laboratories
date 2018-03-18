@@ -28,6 +28,9 @@ public:
 
 	// zwraca tytuł strony
     string getTitle() {return m_title;}
+
+    // dekonstruktor domyślny
+    ~Book();
 private:
 	// tablica stron w książce
     Page* m_pages[100];
@@ -35,7 +38,7 @@ private:
     string m_title;
 	// autor książki i/lub informacja o tym, czy ksiązka jest kopią
     string m_author;
-	// liczba stron 
+	// liczba stron
     int m_number;
 	// iterator liczący dodane strony
     int m_iterator;

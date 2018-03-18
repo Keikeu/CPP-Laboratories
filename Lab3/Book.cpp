@@ -61,3 +61,11 @@ void Book::AddText(string text)
 
     m_iterator++;
 }
+
+
+Book::~Book()
+{
+    for(int i=0; i<m_number; i++)
+        delete m_pages[i];
+    delete[] m_pages;
+}

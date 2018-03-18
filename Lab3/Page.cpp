@@ -6,9 +6,7 @@ using namespace std;
 
 Page* Page::Copy()
 {
-    Page* newPage = new Page();
-    newPage->AddHeader(m_header);
-    newPage->AddText(m_text);
+    Page* newPage = new Page(*this);
 
     return newPage;
 }

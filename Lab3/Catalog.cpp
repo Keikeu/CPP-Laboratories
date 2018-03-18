@@ -11,3 +11,9 @@ void Catalog::Print()
         cout << "Catalog::book(" << i << ") " << m_books[i]->getTitle() << endl;
 }
 
+Catalog::~Catalog()
+{
+    for(int i=0; i<m_number; i++)
+        delete m_books[i];
+    delete[] m_books;
+}

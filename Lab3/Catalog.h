@@ -16,6 +16,9 @@ public:
     void AddBook(Book *book) {m_books[m_number] = book; m_number++;}
 	// wypisuje nazwę katalogu oraz numer i tytuł każdej książki z katalogu
     void Print();
+
+    // destruktor domyślny
+    ~Catalog();
 private:
 	// nazwa katalogu
     string m_name;

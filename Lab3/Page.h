@@ -10,7 +10,7 @@ class Page
 public:
 	// konstruktor nadający stronie domyślny nagłówek i treść ("empty")
     Page(string header = "empty", string text = "empty") : m_header(header), m_text(text) {}
-	// zwraca kopię obiektu
+	// zwraca nowo utworzoną kopię obiektu
     Page* Copy();
 	// wypisuje na ekran nagłówek i treść strony
     void Print();
